@@ -53,6 +53,7 @@
 		<li><a class="text-capitalize" href='#printjobs'>printjobs</a></li>
 		<li><a class="text-capitalize" href='#questions'>questions</a></li>
 		<li><a class="text-capitalize" href='#statements'>statements</a></li>
+		<li><a class="text-capitalize" href='#submission_results'>submission_results</a></li>
 		<li><a class="text-capitalize" href='#submissions'>submissions</a></li>
 		<li><a class="text-capitalize" href='#tasks'>tasks</a></li>
 		<li><a class="text-capitalize" href='#teams'>teams</a></li>
@@ -72,7 +73,7 @@
 
 	<div id="admins" class="col-md-12 mb-5">
 		<h5>Table admins</h5>
-		<i> (This table stores the names and tokens of administrators.)</i>
+		<i> (This table stores the names and tokens of administrators)</i>
 		<table class="table table-bordered">
 			<thead class="dark-black">
 			<tr>
@@ -147,7 +148,7 @@
 
 	<div id="announcements" class="col-md-12 mb-5">
 		<h5>Table announcements</h5>
-		<i> (This table stores the announcements made during the contests.)</i>
+		<i> (This table stores the announcements made during the contests)</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -210,7 +211,7 @@
 
 	<div id="attachments" class="col-md-12 mb-5">
 		<h5>Table attachments</h5>
-		<i> (This table stores the attachements for the tasks.)</i>
+		<i> (This table stores the attachements for the tasks)</i>
 		<table class="table table-bordered">
 
 			<thead>
@@ -268,7 +269,7 @@
 
 	<div id="contests" class="col-md-12 mb-5">
 		<h5>Table contests</h5>
-		<i> (This table stores the contests.)</i>
+		<i> (This table stores the contests)</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -489,7 +490,7 @@
 	
 	<div id="datasets" class="col-md-12 mb-5">
 		<h5>Table datasets</h5>
-		<i> (This table stores the datasets.)</i>
+		<i> (This table stores the datasets)</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -587,7 +588,7 @@
 
 	<div id="evaluations" class="col-md-12 mb-5">
 		<h5>Table evaluations</h5>
-		<i> (This table stores the evaluations.)</i>
+		<i> (This table stores the evaluations)</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -679,7 +680,7 @@
 
 	<div id="executables" class="col-md-12 mb-5">
 		<h5>Table executables</h5>
-		<i> (This table stores the executables submitted by contestants.)</i>
+		<i> (This table stores the executables submitted by contestants)</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -739,7 +740,7 @@
 
 	<div id="files" class="col-md-12 mb-5">
 		<h5>Table files</h5>
-		<i> (This table stores the files submitted by contestants.)</i>
+		<i> (This table stores the files submitted by contestants)</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -793,7 +794,7 @@
 
 	<div id="fsobjects" class="col-md-12 mb-5">
 		<h5>Table fsobjects</h5>
-		<i> (This table stores the log of object-related events.)</i>
+		<i> (This table stores the log of object-related events)</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -837,7 +838,7 @@
 
 	<div id="managers" class="col-md-12 mb-5">
 		<h5>Table managers</h5>
-		<i> (This table stores the so-called managers, grading scripts for allowed languages per dataset.)</i>
+		<i> (This table stores the so-called managers, grading scripts for allowed languages per dataset)</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -893,7 +894,7 @@
 
 	<div id="messages" class="col-md-12 mb-5">
 		<h5>Table messages</h5>
-		<i> (This table stores direct messages sent to contestants.)</i>
+		<i> (This table stores direct messages sent to contestants)</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -955,7 +956,7 @@
 
 	<div id="participations" class="col-md-12 mb-5">
 		<h5>Table participations </h5>
-		<i> (This table stores the access of users to the contests.)</i>
+		<i> (This table stores the access of users to the contests)</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -1047,7 +1048,7 @@
 
 	<div id="printjobs" class="col-md-12 mb-5">
 		<h5>Table print jobs</h5>
-		<i> (This table stores the print jobs log.)</i>
+		<i> (This table stores the print jobs log)</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -1111,7 +1112,7 @@
 
 	<div id="questions" class="col-md-12 mb-5">
 		<h5>Table questions</h5>
-		<i> (This table stores requests and questions from the participants during the contest.)</i>
+		<i> (This table stores requests and questions from the participants during the contest)</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -1194,6 +1195,7 @@
 
 	<div id="statements" class="col-md-12 mb-5">
 		<h5>Table statements</h5>
+		<i> (This table stores task statements in different languages)</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -1205,40 +1207,188 @@
 			</thead>
 			<tbody>
 			<tr>
-				<td>*</td>
+				<td>PK</td>
 				<td><a name='statements_id'>id</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Autogenerated unique ID value </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td>FK</td>
 				<td><a name='statements_task_id'>task_id</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Unique task ID, child of tasks </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='statements_language'>language</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Language code of the statement </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='statements_digest'>digest</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Stores the hash (digest of hash function) of the statement </td>
 			</tr>
 			<tr><th colspan='4' class="text-center">Indexes</th></tr>
-			<tr>		<td></td><td>ix_statements_task_id</td>
-				<td> ON task_id</td>
+			<tr>		
+			<td></td>
+			<td>statements_pkey</td>
+				<td> ON id</td>
+				<td>  </td>
+			</tr>
+			<tr>		
+			<td></td>
+			<td>statements_task_id_language_key</td>
+				<td> ON task_id + language</td>
+				<td>  </td>
+			</tr>			
+			</tbody>
+		</table>
+	</div>
+
+	<div id="submission_results" class="col-md-12 mb-5">
+		<h5>Table submission_results</h5>
+		<i> (This table stores the result of each submission)</i>
+		<table class="table table-bordered">
+			<thead>
+			<tr>
+				<th scope="col">Idx</th>
+				<th scope="col">Field Name</th>
+				<th scope="col">Data Type</th>
+				<th scope="col">Description</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>FK | PK</td>
+				<td><a name='submission_results_submission_id'>id</a></td>
+				<td> int4  </td>
+				<td> Unique ID of the submission, child of submissions, part of Primary Key </td>
+			</tr>
+			<tr>
+				<td>FK | PK</td>
+				<td><a name='submission_results_dataset_id'>dataset_id</a></td>
+				<td> int4  </td>
+				<td> Unique ID of the dataset, child of datasets, part of Primary Key </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='submission_results_compilation_outcome'>compilation_outcome</a></td>
+				<td> compilation_outcome  </td>
+				<td> Stores the compilation outcome in a special datatype: can be ok or fail </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='submission_results_compilation_text'>compilation_text</a></td>
+				<td> varchar  </td>
+				<td> Stores the status of the compilation </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='submission_results_compilation_tries'>compilation_tries</a></td>
+				<td> int4  </td>
+				<td> Stores the compilation tries count </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='submission_results_compilation_stdout'>compilation_stdout</a></td>
+				<td> varchar  </td>
+				<td> Stores the output of the compilator </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='submission_results_compilation_stderr'>compilation_stderr</a></td>
+				<td> varchar  </td>
+				<td> Stores the error produced by the compilator </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='submission_results_compilation_time'>compilation_time</a></td>
+				<td> float8  </td>
+				<td> The amount of CPU time spent on compilation </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='submission_results_compilation_wall_clock_time'>compilation_wall_clock_time</a></td>
+				<td> float8  </td>
+				<td> Total amount of time spent on compilation </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='submission_results_compilation_memory'>compilation_memory</a></td>
+				<td> int8  </td>
+				<td> The amount of memory used by the compilator </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='submission_results_compilation_shard'>compilation_shard</a></td>
+				<td> int4  </td>
+				<td> Shards split by the compilator </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='submission_results_compilation_sandbox'>compilation_sandbox</a></td>
+				<td> varchar  </td>
+				<td> Stores the location of the sandbox used in compilation </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='submission_results_evaluation_outcome'>evaluation_outcome</a></td>
+				<td> evaluation_outcome  </td>
+				<td> Stores the outcome of the evaluation in a special datatype, can be either OK or null </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='submission_results_evaluation_tries'>evaluation_tries</a></td>
+				<td> int4  </td>
+				<td> Amount of [additional] evaluation tries </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='submission_results_score'>score</a></td>
+				<td> float8  </td>
+				<td> Score of the evaluation </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='submission_results_score_details'>score_details</a></td>
+				<td> jsonb  </td>
+				<td> Stores json object with scoring details </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='submission_results_public_score'>public_score</a></td>
+				<td> float8  </td>
+				<td> Score of the evaluation, available to public </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='submission_results_public_score_details'>public_score_details</a></td>
+				<td> jsonb  </td>
+				<td> Stores json object with public scoring details </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='submission_results_ranking_score_details'>ranking_score_details</a></td>
+				<td> varchar  </td>
+				<td> Details and ranks </td>
+			</tr>			
+			<tr><th colspan='4' class="text-center">Indexes</th></tr>
+			<tr>		
+			<td></td>
+			<td>submission_results_pkey</td>
+				<td> ON submission_id + dataset_id</td>
 				<td>  </td>
 			</tr>
 			</tbody>
 		</table>
 	</div>
 
+
 	<div id="submissions" class="col-md-12 mb-5">
 		<h5>Table submissions</h5>
+		<i> (This table stores submission details)</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -1250,54 +1400,52 @@
 			</thead>
 			<tbody>
 			<tr>
-				<td>*</td>
+				<td>PK</td>
 				<td><a name='submissions_id'>id</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Autogenerated unique ID value </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td>FK</td>
 				<td><a name='submissions_participation_id'>participation_id</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Unique ID of the participation, child of participations </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td>FK</td>
 				<td><a name='submissions_task_id'>task_id</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Unique ID of the task, child of tasks </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='submissions_timestamp'>timestamp</a></td>
-				<td> varchar  </td>
-				<td>  </td>
+				<td> timestamp  </td>
+				<td> Precise timestamp of the submission </td>
 			</tr>
 			<tr>
 				<td></td>
 				<td><a name='submissions_language'>language</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Programming language of the submission </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='submissions_comment'>comment</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Free type field for comments </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='submissions_official'>official</a></td>
-				<td> varchar  </td>
-				<td>  </td>
+				<td> bool  </td>
+				<td> Is the submission official: true or false, binary field </td>
 			</tr>
 			<tr><th colspan='4' class="text-center">Indexes</th></tr>
-			<tr>		<td></td><td>ix_submissions_participation_id</td>
+			<tr>		
+			<td></td>
+			<td>submissions_pkey</td>
 				<td> ON participation_id</td>
-				<td>  </td>
-			</tr>
-			<tr>		<td></td><td>ix_submissions_task_id</td>
-				<td> ON task_id</td>
 				<td>  </td>
 			</tr>
 			</tbody>
@@ -1306,6 +1454,7 @@
 
 	<div id="tasks" class="col-md-12 mb-5">
 		<h5>Table tasks</h5>
+		<i> (This table stores tasks information)</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -1316,6 +1465,163 @@
 			</tr>
 			</thead>
 			<tbody>
+			<tr>
+				<td>PK</td>
+				<td><a name='tasks_id'>id</a></td>
+				<td> int4  </td>
+				<td> Autogenerated unique ID value </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='tasks_num'>num</a></td>
+				<td> int4  </td>
+				<td> Order of this task in the contest </td>
+			</tr>
+			<tr>
+				<td>FK</td>
+				<td><a name='tasks_contest_id'>contest_id</a></td>
+				<td> int4  </td>
+				<td> Unique ID of the contest this task belongs to, child of contests </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='tasks_name'>name</a></td>
+				<td> varchar  </td>
+				<td> Name of the task </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='tasks_title'>title</a></td>
+				<td> varchar  </td>
+				<td> Title of the task </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='tasks_submission_format'>submission_format</a></td>
+				<td> varchar  </td>
+				<td> Format, in which submissions will be accepted </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='tasks_primary_statements'>primary_statements</a></td>
+				<td> varchar  </td>
+				<td> Associated primary statement, if available. Most likely to be referring to the language of the statement </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='tasks_token_mode'>token_mode</a></td>
+				<td> token_mode </td>
+				<td> This field is of special datatype and regulates whether this task uses tokens. Can be "disabled", "infinite" or "finite" </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='tasks_token_max_number'>token_max_number</a></td>
+				<td> int4 </td>
+				<td> If token mode is set to "finite", this field sets the maximum number of tokens available for this task, otherwise left empty </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='tasks_token_min_interval'>token_min_interval</a></td>
+				<td> interval </td>
+				<td> If token mode is used and the token has been used, this field defines the minimum amount of time contestant has to wait before another token can be used </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='tasks_token_gen_initial'>token_gen_initial</a></td>
+				<td> int4 </td>
+				<td> If token mode is set to "finite", this field defines the amount of tokens available when task begins. Counter decrements by 1 each time contestant uses a token </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='tasks_token_gen_number'>token_gen_number</a></td>
+				<td> int4 </td>
+				<td> If token mode is set to "finite", this field defines the amount of tokens added every selected interval to the contestants. </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='tasks_token_gen_interval'>token_gen_interval</a></td>
+				<td> interval </td>
+				<td> If token mode is set to "finite", this field defines the interval between new tokens generation. </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='tasks_token_gen_max'>token_gen_max</a></td>
+				<td> int4 </td>
+				<td> If token mode is set to "finite", this field defines the maximum amount of tokens that can be generated for this task </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='tasks_max_submission_number'>max_submission_number</a></td>
+				<td> int4 </td>
+				<td> This field sets the maximum number of submission each participant can make per task </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='tasks_max_user_test_number'>max_user_test_number</a></td>
+				<td> int4 </td>
+				<td> This field sets the maximum number of tests each participant can make per task </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='tasks_min_submission_interval'>min_submission_interval</a></td>
+				<td> interval </td>
+				<td> The minimum amount of time, in seconds, the user is required to wait after a submission has been submitted before next one can be submitted </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='tasks_min_user_test_interval'>min_user_test_interval</a></td>
+				<td> interval </td>
+				<td> The minimum amount of time, in seconds, the user is required to wait after a test has been submitted before next one can be submitted </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='tasks_feedback_level'>feedback_level</a></td>
+				<td> varchar  </td>
+				<td> Level of feedback for this task </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='tasks_score_precision'>score_precision</a></td>
+				<td> int4 </td>
+				<td> Scoring precision for this task </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a name='tasks_score_mode'>score_mode</a></td>
+				<td> score_mode </td>
+				<td> This field is of special datatype and regulates how this task will be scored </td>
+			</tr>
+			<tr>
+				<td>FK</td>
+				<td><a name='tasks_dataset_id'>dataset_id</a></td>
+				<td> int4  </td>
+				<td> Unique ID of the dataset used for this task, child of datasets </td>
+			</tr>			
+			<tr><th colspan='4' class="text-center">Indexes</th></tr>
+			<tr>		
+			<td></td>
+			<td>tasks_pkey</td>
+				<td> ON id</td>
+				<td>  </td>
+			</tr>
+			<tr>		
+			<td></td>
+			<td>tasks_contest_id_name_key</td>
+				<td> ON contest_id + name</td>
+				<td>  </td>
+			</tr>
+			<tr>		
+			<td></td>
+			<td>tasks_contest_id_num_key</td>
+				<td> ON contest_id + num</td>
+				<td>  </td>
+			</tr>
+			<tr>		
+			<td></td>
+			<td>tasks_name_key</td>
+				<td> ON name</td>
+				<td>  </td>
+			</tr>			
 			</tbody>
 		</table>
 	</div>
@@ -1334,29 +1640,43 @@
 			</thead>
 			<tbody>
 			<tr>
-				<td>*</td>
+				<td>PK</td>
 				<td><a name='teams_id'>id</a></td>
-				<td> int  </td>
+				<td> int4  </td>
 				<td> The unique ID of the team </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='teams_code'>code</a></td>
 				<td> varchar  </td>
 				<td> A short description of the team. In IOI, it's a country code in <b>ISO 3166-1 alpha-3 code</b> format </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='teams_name'>name</a></td>
 				<td> varchar  </td>
 				<td> Full description of the team. In IOI, the name of the country. </td>
 			</tr>
+			<tr><th colspan='4' class="text-center">Indexes</th></tr>
+			<tr>		
+			<td></td>
+			<td>teams_pkey</td>
+				<td> ON id</td>
+				<td>  </td>
+			</tr>
+			<tr>		
+			<td></td>
+			<td>teams_code_key</td>
+				<td> ON code</td>
+				<td>  </td>
+			</tr>			
 			</tbody>
 		</table>
 	</div>
 
 	<div id="testcases" class="col-md-12 mb-5">
 		<h5>Table testcases</h5>
+		<i>(Stores the details of testcases)</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -1368,52 +1688,61 @@
 			</thead>
 			<tbody>
 			<tr>
-				<td>*</td>
+				<td>PK</td>
 				<td><a name='testcases_id'>id</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Autogenerated unique ID value </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td>FK</td>
 				<td><a name='testcases_dataset_id'>dataset_id</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Unique ID of the dataset used for this testcase, child of datasets </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='testcases_codename'>codename</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Codename given to the testcase </td>
 			</tr>
 			<tr>
-				<td>*</td>
-				<td><a name='testcases_'></a></td>
-				<td> varchar  </td>
-				<td>  </td>
+				<td></td>
+				<td><a name='testcases_public'>public</a></td>
+				<td> bool  </td>
+				<td> Is this testcase public: true or false, binary field </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='testcases_input'>input</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Input for the testcase </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='testcases_output'>output</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Output of the testcase </td>
 			</tr>
 			<tr><th colspan='4' class="text-center">Indexes</th></tr>
-			<tr>		<td></td><td>ix_testcases_dataset_id</td>
-				<td> ON dataset_id</td>
+			<tr>		
+			<td></td>
+			<td>testcases_pkey</td>
+				<td> ON id</td>
 				<td>  </td>
 			</tr>
+			<tr>		
+			<td></td>
+			<td>testcases_dataset_id_codename_key</td>
+				<td> ON dataset_id + codename</td>
+				<td>  </td>
+			</tr>			
 			</tbody>
 		</table>
 	</div>
 
 	<div id="tokens" class="col-md-12 mb-5">
 		<h5>Table tokens</h5>
+		<i>(Stores tokens given or used if token_mode is enabled)</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -1425,35 +1754,43 @@
 			</thead>
 			<tbody>
 			<tr>
-				<td>*</td>
+				<td>PK</td>
 				<td><a name='tokens_id'>id</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Autogenerated unique ID value </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td>FK</td>
 				<td><a name='tokens_submission_id'>submission_id</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Unique value of the submission that used this token, child of submissions </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='tokens_timestamp'>timestamp</a></td>
-				<td> varchar  </td>
-				<td>  </td>
+				<td> timestamp  </td>
+				<td> Timestamp of consumption </td>
 			</tr>
 			<tr><th colspan='4' class="text-center">Indexes</th></tr>
-			<tr>		<td></td><td>ix_tokens_submission_id</td>
-				<td> ON submission_id</td>
+			<tr>		
+			<td></td>
+			<td>tokens_pkey</td>
+				<td> ON id</td>
 				<td>  </td>
 			</tr>
+			<tr>		
+			<td></td>
+			<td>tokens_submission_id_key</td>
+				<td> ON submission_id</td>
+				<td>  </td>
+			</tr>			
 			</tbody>
 		</table>
 	</div>
 
 	<div id="users" class="col-md-12 mb-5">
 		<h5>Table users</h5>
-		<i>(This table stores the list of all entered users. Adding a user to CMS does not guarantee the access to the contests. To grant an access to the contests, user shall exists in a participation table. )</i>
+		<i>(This table stores the list of all entered users. Adding a user to CMS does not guarantee the access to the contests. To grant an access to the contests, user shall exists in a participation table)</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -1465,31 +1802,31 @@
 			</thead>
 			<tbody>
 			<tr>
-				<td>*</td>
+				<td>PK</td>
 				<td><a name='users_id'>id</a></td>
-				<td> int  </td>
+				<td> int4  </td>
 				<td> A unique ID of the user </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='users_first_name'>first_name</a></td>
 				<td> varchar  </td>
 				<td> First name </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='users_last_name'>last_name</a></td>
 				<td> varchar  </td>
 				<td> Last name </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='users_username'>username</a></td>
 				<td> varchar  </td>
 				<td> Login name of the user. In IOI, it's usually associated with the country code. Example: 'AZE1', 'ITA3' and 'SWE2'. <br> <i>Caution: avoid using "-" sign in logins, like 'SGP-4'.</i>  </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='users_password'>password</a></td>
 				<td> varchar  </td>
 				<td> A password of the user is stored here. It can be plain or encrypted text</td>
@@ -1507,17 +1844,31 @@
 				<td> Timezone of the user </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='users_preferred_languages'>preferred_languages</a></td>
 				<td> varchar  </td>
 				<td>  </td>
 			</tr>
+			<tr><th colspan='4' class="text-center">Indexes</th></tr>
+			<tr>		
+			<td></td>
+			<td>users_pkey</td>
+				<td> ON id</td>
+				<td>  </td>
+			</tr>
+			<tr>		
+			<td></td>
+			<td>users_username_key</td>
+				<td> ON username</td>
+				<td>  </td>
+			</tr>				
 			</tbody>
 		</table>
 	</div>
 
 	<div id="user_test_executables" class="col-md-12 mb-5">
 		<h5>Table user test executables</h5>
+		<i>(This table stores the test executables information )</i>
 		<table id="" class="table table-bordered">
 			<thead>
 			<tr>
@@ -1529,42 +1880,46 @@
 			</thead>
 			<tbody>
 			<tr>
-				<td>*</td>
+				<td>PK</td>
 				<td><a name='user_test_executables_id'>id</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Autogenerated unique ID value </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td>FK</td>
 				<td><a name='user_test_executables_user_test_id'>user_test_id</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Unique ID of the user test, child of user_tests </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td>FK</td>
 				<td><a name='user_test_executables_dataset_id'>dataset_id</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Unique ID of the dataset used, child of datasets </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='user_test_executables_filename'>filename</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Filename of the test executable </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='user_test_executables_digest'>digest</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Stores the hash (digest of hash function) of the test executable </td>
 			</tr>
 			<tr><th colspan='4' class="text-center">Indexes</th></tr>
-			<tr>		<td></td><td>ix_user_test_executables_dataset_id</td>
-				<td> ON dataset_id</td>
+			<tr>		
+			<td></td>
+			<td>user_test_executables_pkey</td>
+				<td> ON id</td>
 				<td>  </td>
 			</tr>
-			<tr>		<td></td><td>ix_user_test_executables_user_test_id</td>
-				<td> ON user_test_id</td>
+			<tr>		
+			<td></td>
+			<td>user_test_executables_user_test_id_dataset_id_filename_key</td>
+				<td> ON user_test_id + dataset_id + filename</td>
 				<td>  </td>
 			</tr>
 			</tbody>
@@ -1573,6 +1928,7 @@
 
 	<div id="user_test_files" class="col-md-12 mb-5">
 		<h5>Table user test files</h5>
+		<i>(This table stores the test files information )</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -1584,40 +1940,49 @@
 			</thead>
 			<tbody>
 			<tr>
-				<td>*</td>
+				<td>PK</td>
 				<td><a name='user_test_files_id'>id</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Autogenerated unique ID value </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td>FK</td>
 				<td><a name='user_test_files_user_test_id'>user_test_id</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Unique ID of the user test, child of user_tests </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='user_test_files_filename'>filename</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> The name of the test file </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='user_test_files_digest'>digest</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Stores the hash (digest of hash function) of the test file </td>
 			</tr>
 			<tr><th colspan='4' class="text-center">Indexes</th></tr>
-			<tr>		<td></td><td>ix_user_test_files_user_test_id</td>
-				<td> ON user_test_id</td>
+			<tr>		
+			<td></td>
+			<td>user_test_files_pkey</td>
+				<td> ON id</td>
 				<td>  </td>
 			</tr>
+			<tr>		
+			<td></td>
+			<td>user_test_files_user_test_id_filename_key</td>
+				<td> ON user_test_id + filename</td>
+				<td>  </td>
+			</tr>			
 			</tbody>
 		</table>
 	</div>
 
 	<div id="user_test_managers" class="col-md-12 mb-5">
 		<h5>Table user test managers</h5>
+		<i>(This table stores the so-called test managers, grading scripts for allowed languages per dataset )</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -1629,40 +1994,49 @@
 			</thead>
 			<tbody>
 			<tr>
-				<td>*</td>
+				<td>PK</td>
 				<td><a name='user_test_managers_id'>id</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Autogenerated unique ID value </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td>FK</td>
 				<td><a name='user_test_managers_user_test_id'>user_test_id</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Unique ID of the user test, child of user_tests </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='user_test_managers_filename'>filename</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Name of the file containing test manager </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='user_test_managers_digest'>digest</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Stores the hash (digest of hash function) of the test manager file </td>
 			</tr>
 			<tr><th colspan='4' class="text-center">Indexes</th></tr>
-			<tr>		<td></td><td>ix_user_test_managers_user_test_id</td>
-				<td> ON user_test_id</td>
+			<tr>		
+			<td></td>
+			<td>user_test_managers_pkey</td>
+				<td> ON id</td>
 				<td>  </td>
 			</tr>
+			<tr>		
+			<td></td>
+			<td>user_test_managers_user_test_id_filename_key</td>
+				<td> ON user_test_id + filename</td>
+				<td>  </td>
+			</tr>	
 			</tbody>
 		</table>
 	</div>
 
 	<div id="user_test_results" class="col-md-12 mb-5">
 		<h5>Table user test results</h5>
+		<i>(This table stores the results of test evaluations )</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -1674,137 +2048,145 @@
 			</thead>
 			<tbody>
 			<tr>
-				<td>*</td>
+				<td>PK | FK</td>
 				<td><a name='user_test_results_user_test_id'>user_test_id</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Unique ID of the user test, child of user_tests, part of the primary key </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td>PK | FK</td>
 				<td><a name='user_test_results_dataset_id'>dataset_id</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Unique ID of the dataset, child of datasets, part of the primary key </td>
 			</tr>
 			<tr>
 				<td></td>
 				<td><a name='user_test_results_output'>output</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Output of the test </td>
 			</tr>
 			<tr>
 				<td></td>
 				<td><a name='user_test_results_compilation_outcome'>compilation_outcome</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Compilation outcome of the test compilation </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='user_test_results_compilation_text'>compilation_text</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Text of the compilation </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='user_test_results_compilation_tries'>compilation_tries</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Amount of times compilation was attempted </td>
 			</tr>
 			<tr>
 				<td></td>
 				<td><a name='user_test_results_compilation_stdout'>compilation_stdout</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Output of the compiler </td>
 			</tr>
 			<tr>
 				<td></td>
 				<td><a name='user_test_results_compilation_stderr'>compilation_stderr</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Error output of the compiler </td>
 			</tr>
 			<tr>
 				<td></td>
 				<td><a name='user_test_results_compilation_time'>compilation_time</a></td>
-				<td> varchar  </td>
-				<td>  </td>
+				<td> float8  </td>
+				<td> Amount of CPU time used during compilation </td>
 			</tr>
 			<tr>
 				<td></td>
 				<td><a name='user_test_results_compilation_wall_clock_time'>compilation_wall_clock_time</a></td>
-				<td> varchar  </td>
-				<td>  </td>
+				<td> float8  </td>
+				<td> Total amount of time used during compilation </td>
 			</tr>
 			<tr>
 				<td></td>
 				<td><a name='user_test_results_compilation_memory'>compilation_memory</a></td>
-				<td> bigint  </td>
-				<td>  </td>
+				<td> int8  </td>
+				<td> Amount of memory used during compilation </td>
 			</tr>
 			<tr>
 				<td></td>
 				<td><a name='user_test_results_compilation_shard'>compilation_shard</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Shards used during compilation </td>
 			</tr>
 			<tr>
 				<td></td>
 				<td><a name='user_test_results_compilation_sandbox'>compilation_sandbox</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Address of the sandbox used for compilation </td>
 			</tr>
 			<tr>
 				<td></td>
 				<td><a name='user_test_results_evaluation_outcome'>evaluation_outcome</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> The outcome of the test evaluation </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='user_test_results_evaluation_text'>evaluation_text</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Text of the evaluation </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='user_test_results_evaluation_tries'>evaluation_tries</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Amount of tries evaluation was attempted </td>
 			</tr>
 			<tr>
 				<td></td>
 				<td><a name='user_test_results_execution_time'>execution_time</a></td>
-				<td> varchar  </td>
-				<td>  </td>
+				<td> float8  </td>
+				<td> Amount of CPU time used during execution </td>
 			</tr>
 			<tr>
 				<td></td>
 				<td><a name='user_test_results_execution_wall_clock_time'>execution_wall_clock_time</a></td>
-				<td> varchar  </td>
-				<td>  </td>
+				<td> float8  </td>
+				<td> Total amount of time used during execution </td>
 			</tr>
 			<tr>
 				<td></td>
 				<td><a name='user_test_results_execution_memory'>execution_memory</a></td>
-				<td> bigint  </td>
-				<td>  </td>
+				<td> int8  </td>
+				<td> Amount of memory used during execution </td>
 			</tr>
 			<tr>
 				<td></td>
 				<td><a name='user_test_results_evaluation_shard'>evaluation_shard</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Amount of shards </td>
 			</tr>
 			<tr>
 				<td></td>
 				<td><a name='user_test_results_evaluation_sandbox'>evaluation_sandbox</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Address of the sandbox used for evaluation </td>
 			</tr>
+			<tr><th colspan='4' class="text-center">Indexes</th></tr>
+			<tr>		
+			<td></td>
+			<td>user_test_results_pkey</td>
+				<td> ON user_test_id + dataset_id</td>
+				<td>  </td>
+			</tr>			
 			</tbody>
 		</table>
 	</div>
 
 	<div id="user_tests" class="col-md-12">
 		<h5>Table user tests</h5>
+		<i>(This table stores the user tests details )</i>
 		<table class="table table-bordered">
 			<thead>
 			<tr>
@@ -1816,48 +2198,50 @@
 			</thead>
 			<tbody>
 			<tr>
-				<td>*</td>
+				<td>PK</td>
 				<td><a name='user_tests_id'>id</a></td>
-				<td> int  </td>
+				<td> int4  </td>
 				<td>  </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td>FK</td>
 				<td><a name='user_tests_participation_id'>participation_id</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Unique ID of the participation, child of participations </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td>FK</td>
 				<td><a name='user_tests_task_id'>task_id</a></td>
-				<td> int  </td>
-				<td>  </td>
+				<td> int4  </td>
+				<td> Unique ID of the task, child of tasks </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='user_tests_timestamp'>timestamp</a></td>
-				<td> varchar  </td>
-				<td>  </td>
+				<td> timestamp  </td>
+				<td> Precise timestamp of the test </td>
 			</tr>
 			<tr>
 				<td></td>
 				<td><a name='user_tests_language'>language</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Programming language used </td>
 			</tr>
 			<tr>
-				<td>*</td>
+				<td></td>
 				<td><a name='user_tests_input'>input</a></td>
 				<td> varchar  </td>
-				<td>  </td>
+				<td> Input for the test </td>
 			</tr>
 			<tr><th colspan='4' class="text-center">Indexes</th></tr>
 			<tr>		<td></td><td>ix_user_tests_participation_id</td>
 				<td> ON participation_id</td>
 				<td>  </td>
 			</tr>
-			<tr>		<td></td><td>ix_user_tests_task_id</td>
-				<td> ON task_id</td>
+			<tr>		
+			<td></td>
+			<td>user_tests_pkey</td>
+				<td> ON id</td>
 				<td>  </td>
 			</tr>
 			</tbody>
