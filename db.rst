@@ -291,24 +291,19 @@ CMC DB Structure
    * - 
      - token_gen_initial
      - int4
-     - If token mode is set to "finite", this field defines the amount of
-tokens available when contest begins. Counter decrements by 1 each time
-contestant uses a token
+     - If token mode is set to "finite", this field defines the amount of tokens available when contest begins. Counter decrements by 1 each time contestant uses a token
    * - 
      - token_gen_number
      - int4
-     - If token mode is set to "finite", this field defines the amount of
-tokens added every selected interval to the contestants.
+     - If token mode is set to "finite", this field defines the amount of tokens added every selected interval to the contestants.
    * - 
      - token_gen_interval
      - interval
-     - If token mode is set to "finite", this field defines the interval
-between new tokens generation.
+     - If token mode is set to "finite", this field defines the interval between new tokens generation.
    * - 
      - token_gen_max
      - int4
-     - If token mode is set to "finite", this field defines the maximum amount
-of tokens that can be generated in this contest
+     - If token mode is set to "finite", this field defines the maximum amount of tokens that can be generated in this contest
    * - 
      - start
      - timestamp
@@ -336,8 +331,7 @@ of tokens that can be generated in this contest
    * - 
      - per_user_time
      - interval
-     - If set to non-null value, this fields regulate the amount of time
-contestant can participate in the timeframe of the contest
+     - If set to non-null value, this fields regulate the amount of time contestant can participate in the timeframe of the contest
    * - 
      - max_submission_number
      - int4
@@ -349,18 +343,15 @@ contestant can participate in the timeframe of the contest
    * - 
      - min_submission_interval
      - interval
-     - The minimum amount of time, in seconds, the user is required to wait
-after a submission has been submitted before next one can be submitted
+     - The minimum amount of time, in seconds, the user is required to wait after a submission has been submitted before next one can be submitted
    * - 
      - min_user_test_interval
      - interval
-     - The minimum amount of time, in seconds, the user is required to wait
-after a test has been submitted before next one can be submitted
+     - The minimum amount of time, in seconds, the user is required to wait after a test has been submitted before next one can be submitted
    * - 
      - score_precision
      - int4
-     - This field sets the precision of the score showed to participants in
-amount of decimals in float number
+     - This field sets the precision of the score showed to participants in amount of decimals in float number
 
 .. list-table:: Constraints & Indexes
    :widths: 40 70
