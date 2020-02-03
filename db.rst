@@ -47,6 +47,7 @@ CMC DB Structure
 .. container:: row justify-content-center p-5
 
 |||
+
 .. container:: col-md-12 mb-5
       :name: admins
 
@@ -101,6 +102,7 @@ CMC DB Structure
      - ON username
 
 |||
+
 .. container:: col-md-12 mb-5
    :name: announcements
 
@@ -149,6 +151,7 @@ CMC DB Structure
      - ON id
 
 |||
+
 .. container:: col-md-12 mb-5
    :name: attachments
 
