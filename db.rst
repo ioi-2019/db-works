@@ -236,7 +236,8 @@ CMC DB Structure
      - name
      - varchar
      - Name of the contest
-   * - description
+   * - 
+     - description
      - varchar
      - Description of the contest
    * - 
