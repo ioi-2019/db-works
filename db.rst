@@ -12,6 +12,7 @@ CMC DB Structure
       :name: erd-diagram
 
    |ERD Diagram|
+   
    .. rubric:: Tables
       :name: tables
 
