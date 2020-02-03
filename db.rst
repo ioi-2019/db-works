@@ -97,11 +97,14 @@ CMC DB Structure
 
 .. list-table:: Constraints & Indexes
    :widths: 40 70
+   :header-rows: 1
 
+   * - Name
+     - On field
    * - admins_pkey
-     - ON id
+     - id
    * - admins_username_key
-     - ON username
+     - username
 
 | 
 | 
@@ -150,9 +153,12 @@ CMC DB Structure
 
 .. list-table:: Constraints & Indexes
    :widths: 40 70
+   :header-rows: 1
 
+   * - Name
+     - On field
    * - announcement_pkey
-     - ON id
+     - id
 
 | 
 | 
@@ -193,11 +199,14 @@ CMC DB Structure
 
 .. list-table:: Constraints & Indexes
    :widths: 40 70
+   :header-rows: 1
 
+   * - Name
+     - On field
    * - attachments_pkey
-     - ON id
+     - id
    * - attachments_task_id_filename_key
-     - ON task_id + filename
+     - task_id + filename
 
 | 
 | 
@@ -210,8 +219,16 @@ CMC DB Structure
       :name: table-contests
 
    *(This table stores the contests)*
-   Idx
 
+.. list-table:: 
+   :widths: 10 25 25 50
+   :header-rows: 1
+   
+   * - Idx
+     - Field Name
+     - Data Type
+     - Description
+     
 Field Name
 Data Type
 Description
@@ -324,16 +341,23 @@ score_precision
 int4
 This field sets the precision of the score showed to participants in
 amount of decimals in float number
-Indexes
-contests_name_key
-ON name
-contests_pkey
-ON id
+
+.. list-table:: Constraints & Indexes
+   :widths: 40 70
+   :header-rows: 1
+
+   * - Name
+     - On field
+   * - contests_pkey
+     - id
+   * - contests_name_key
+     - name
+
 
 .. container:: col-md-12 mb-5
    :name: datasets
 
-   .. rubric:: Table datasets
+   .. rubric:: **Table datasets**
       :name: table-datasets
 
    *(This table stores the datasets)*
