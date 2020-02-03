@@ -288,8 +288,7 @@ CMC DB Structure
      - token_min_interval
      - interval
      - If token mode is used and the token has been used, this field defines
-the minimum amount of time contestant has to wait before another token
-can be used
+the minimum amount of time contestant has to wait before another token can be used
    * - 
      - token_gen_initial
      - int4
