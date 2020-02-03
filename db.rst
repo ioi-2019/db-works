@@ -53,7 +53,7 @@ CMC DB Structure
 .. container:: col-md-12 mb-5
       :name: admins
 
-      .. rubric:: **Table admins**
+      .. rubric:: **admins**
          :name: table-admins
 
       *(This table stores the names and tokens of administrators)*
@@ -113,7 +113,7 @@ CMC DB Structure
 .. container:: col-md-12 mb-5
    :name: announcements
 
-   .. rubric:: **Table announcements**
+   .. rubric:: **announcements**
       :name: table-announcements
 
    *(This table stores the announcements made during the contests)*
@@ -167,7 +167,7 @@ CMC DB Structure
 .. container:: col-md-12 mb-5
    :name: attachments
 
-   .. rubric:: **Table attachments**
+   .. rubric:: **attachments**
       :name: table-attachments
 
    *(This table stores the attachements for the tasks)*
@@ -215,7 +215,7 @@ CMC DB Structure
 .. container:: col-md-12 mb-5
    :name: contests
 
-   .. rubric:: **Table contests**
+   .. rubric:: **contests**
       :name: table-contests
 
    *(This table stores the contests)*
