@@ -153,6 +153,7 @@ CMC DB Structure
       :name: table-attachments
 
    *(This table stores the attachements for the tasks)*
+   
    .. list-table:: 
    :widths: 10 25 25 50
    :header-rows: 1
