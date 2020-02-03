@@ -46,7 +46,7 @@ CMC DB Structure
 
 .. container:: row justify-content-center p-5
 
-|||
+| | | 
 
 .. container:: col-md-12 mb-5
       :name: admins
@@ -101,7 +101,7 @@ CMC DB Structure
    * - admins_username_key
      - ON username
 
-|||
+| | | 
 
 .. container:: col-md-12 mb-5
    :name: announcements
@@ -150,7 +150,7 @@ CMC DB Structure
    * - announcement_pkey
      - ON id
 
-|||
+| | | 
 
 .. container:: col-md-12 mb-5
    :name: attachments
@@ -193,8 +193,7 @@ CMC DB Structure
    * - attachments_task_id_filename_key
      - ON task_id + filename
 
-
-
+| | | 
 
 .. container:: col-md-12 mb-5
    :name: contests
