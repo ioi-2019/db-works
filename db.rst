@@ -46,10 +46,13 @@ CMC DB Structure
 
 .. container:: row justify-content-center p-5
 
-   .. container:: col-md-12 mb-5
+
+
+
+.. container:: col-md-12 mb-5
       :name: admins
 
-      .. rubric:: Table admins
+      .. rubric:: **Table admins**
          :name: table-admins
 
       *(This table stores the names and tokens of administrators)*
@@ -99,10 +102,13 @@ CMC DB Structure
    * - admins_username_key
      - ON username
 
+
+
+
 .. container:: col-md-12 mb-5
    :name: announcements
 
-   .. rubric:: Table announcements
+   .. rubric:: **Table announcements**
       :name: table-announcements
 
    *(This table stores the announcements made during the contests)*
@@ -146,10 +152,13 @@ CMC DB Structure
    * - announcement_pkey
      - ON id
 
+
+
+
 .. container:: col-md-12 mb-5
    :name: attachments
 
-   .. rubric:: Table attachments
+   .. rubric:: **Table attachments**
       :name: table-attachments
 
    *(This table stores the attachements for the tasks)*
@@ -187,10 +196,13 @@ CMC DB Structure
    * - attachments_task_id_filename_key
      - ON task_id + filename
 
+
+
+
 .. container:: col-md-12 mb-5
    :name: contests
 
-   .. rubric:: Table contests
+   .. rubric:: **Table contests**
       :name: table-contests
 
    *(This table stores the contests)*
