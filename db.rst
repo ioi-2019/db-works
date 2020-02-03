@@ -54,7 +54,7 @@ CMC DB Structure
 
       *(This table stores the names and tokens of administrators)*
 
-.. list-table:: Title
+.. list-table:: Table admins
    :widths: 10 25 25 50
    :header-rows: 1
    
@@ -91,12 +91,15 @@ CMC DB Structure
      - bool
      - Messaging privilege: true or false, binary field
 
+.. list-table:: Index
+   :widths: 10 25 75
 
-Indexes
-admins_pkey
-ON id
-admins_username_key
-ON username
+   * -
+     - admins_pkey
+     - ON id
+   * -
+     - admins_username_key
+     - ON username
 
 .. container:: col-md-12 mb-5
    :name: announcements
